@@ -51,7 +51,7 @@
           Transformasi Digital Anda
         </h5>
         <p class="text-text/50 text-xs">
-          Bersama <span class="text-title">RYSTECH</span> membangun kesuksesan
+          Bersama <span class="text-title">RYSDEV</span> membangun kesuksesan
         </p>
       </div>
     </div>
