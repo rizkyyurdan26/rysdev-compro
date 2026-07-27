@@ -2,9 +2,9 @@
   <div
     class="group relative flex flex-col py-5 px-2 items-center justify-center border border-title/20  rounded-xl gap-2 hover:scale-102 hover:border-title transform duration-300" v-for="(item, index) in data" :key="item.id"
   >
-    <h1 class="text-title text-xl md:text-2xl font-semibold tracking-widest">
+    <span class="text-title text-xl md:text-2xl font-semibold tracking-widest">
       {{ item.id }}
-    </h1>
+    </span>
     <h3 class="text-text text-base md:text-lg font-bold text-center">{{ item.title }}</h3>
     <p class="text-text/70 text-sm md:text-base text-center">
       {{ item.description }}

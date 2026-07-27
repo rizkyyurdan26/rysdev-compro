@@ -10,9 +10,9 @@
         data-aos-mirror="true"
         class="flex flex-col gap-3 items-center text-center"
       >
-        <h1 class="text-xl md:text-2xl text-text font-bold">
+        <h2 class="text-xl md:text-2xl text-text font-bold">
           Prosedur Kami Bekerja
-        </h1>
+        </h2>
         <p class="text-sm md:text-base text-white/70">
           Workflow sistematis, jelas, terpercaya, tepat waktu, dan hasil
           maksimal

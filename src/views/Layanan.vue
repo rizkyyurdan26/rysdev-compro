@@ -11,9 +11,9 @@
         data-aos-easing="ease-in-out"
         class="flex flex-col items-center justify-center text-center"
       >
-        <h1 class="text-text text-xl md:text-2xl font-bold">
+        <h2 class="text-text text-xl md:text-2xl font-bold">
           Layanan Unggulan Kami
-        </h1>
+        </h2>
         <p class="text-text/70 mt-2 max-w-2xl text-sm md:text-base">
           Kami menyediakan solusi terintegrasi untuk mengembangkan bisnis dan
           meningkatkan produktivitas Anda

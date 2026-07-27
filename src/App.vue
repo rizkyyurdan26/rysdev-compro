@@ -25,18 +25,24 @@ import { useHead } from "@unhead/vue";
 
 useHead({
   htmlAttrs: { lang: "id" },
-  titleTemplate: "Layanan Website & Gadget Pekanbaru | RYSDEV Digital Solution",
-  defaultTitle: "RYSDEV Digital Solution",
+  title: "RYSDEV Digital Solution",
+  titleTemplate: "%s | Layanan Website & Gadget Pekanbaru",
   meta: [
     {
       name: "description",
-      content: "Kami menyediakan layanan Teknologi, Gadget dan Akademik di Pekanbaru, meliputi konsultan IT, pembuatan website dan aplikasi, sparepart handphone serta jasa tugas kuliah maupun skripsi secara profesional dan terpercaya.",
+      content: "RYSDEV Digital Solution menyediakan Jasa Pembuatan Website, Service Gadget dan Konsultasi Akademik di Pekanbaru, meliputi konsultan IT, pembuatan aplikasi, sparepart handphone serta jasa bimbingan skripsi terpercaya.",
     },
     { property: "og:type", content: "website" },
     { property: "og:site_name", content: "RYSDEV Digital Solution" },
     { property: "og:url", content: "https://rysdev.my.id/" },
+    { property: "og:title", content: "RYSDEV Digital Solution | Layanan Website & Gadget Pekanbaru" },
+    { property: "og:description", content: "RYSDEV Digital Solution menyediakan Jasa Pembuatan Website, Service Gadget dan Konsultasi Akademik di Pekanbaru." },
     { property: "og:image", content: "https://rysdev.my.id/og-thumb.png" },
+    
+    // 4. Lengkapi Twitter Cards
     { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "RYSDEV Digital Solution | Layanan Website & Gadget Pekanbaru" },
+    { name: "twitter:description", content: "Jasa Pembuatan Website, Service Gadget dan Konsultasi Akademik di Pekanbaru oleh RYSDEV." },
     { name: "twitter:image", content: "https://rysdev.my.id/og-thumb.png" },
   ],
   link: [{ rel: "canonical", href: "https://rysdev.my.id/" }],

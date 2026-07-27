@@ -6,7 +6,7 @@
   >
     <!-- Left -->
     <div class="flex flex-col gap-3 md:max-w-[50%]">
-      <h1 class="text-text text-base md:text-xl font-bold">{{ item.title }}</h1>
+      <h3 class="text-text text-base md:text-xl font-bold">{{ item.title }}</h3>
       <p class="text-text/70 text-sm md:text-base">{{ item.description }}</p>
 
       <div
@@ -16,9 +16,9 @@
       >
         <Icon icon="maki:arrow" class="text-title" />
         <div>
-          <h3 class="text-text font-bold text-sm md:text-base">
+          <h4 class="text-text font-bold text-sm md:text-base">
             {{ content.title }}
-          </h3>
+          </h4>
           <p class="text-text/70 text-xs md:text-sm">
             {{ content.description }}
           </p>

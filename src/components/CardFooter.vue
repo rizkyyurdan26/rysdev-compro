@@ -5,9 +5,9 @@
     :key="item.id"
   >
     <Icon :icon="item.icon" class="w-8 h-8" />
-    <h1 class="text-text font-semibold text-base md:text-lg">
+    <h3 class="text-text font-semibold text-base md:text-lg">
       {{ item.title }}
-    </h1>
+    </h3>
     <a
       :href="item.href"
       target="_blank"

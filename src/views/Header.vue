@@ -8,11 +8,11 @@
         <a href="#home"
           ><img
             src="/favicon192.png"
-            alt="RysDev"
-            title="RysDev"
+            alt="RYSDEV"
+            title="RYSDEV"
             class="w-8 md:w-12"
         /></a>
-        <h1 class="text-text font-bold text-sm md:text-xl">RYSDEV</h1>
+        <span class="text-text font-bold text-sm md:text-xl">RYSDEV</span>
       </div>
 
       <!-- Hamburger btn -->
@@ -66,9 +66,15 @@
         >
 
         <a
-          :class="['border text-center border-title font-semibold py-2 px-3 rounded-xl hover:scale-110 transform duration-300', activeMenu === 'contact' ? 'bg-title/20 text-text' : 'text-title']"
+          :class="[
+            'border text-center border-title font-semibold py-2 px-3 rounded-xl hover:scale-110 transform duration-300',
+            activeMenu === 'contact' ? 'bg-title/20 text-text' : 'text-title',
+          ]"
           href="#contact"
-          @click="setActiveMenu('contact'); isOpen = false"
+          @click="
+            setActiveMenu('contact');
+            isOpen = false;
+          "
           >Contact Us</a
         >
       </nav>

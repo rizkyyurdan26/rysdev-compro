@@ -15,10 +15,13 @@
         data-aos-mirror="true"
         class="flex flex-col items-center text-center gap-2 md:gap-3"
       >
-        <h1 class="text-title font-bold text-3xl md:text-5xl">RYSDEV</h1>
-        <h1 class="text-text font-bold text-3xl md:text-5xl">
-          DIGITAL SOLUTION
+        <h1 class="text-title font-bold text-3xl md:text-5xl">
+          RYSDEV <br /><span
+            class="text-text text-center font-bold text-3xl md:text-5xl"
+            >Digital Solution</span
+          >
         </h1>
+
         <p class="text-text/70 text-base md:text-lg mt-5 max-w-xl">
           Solusi digital & gadget terpercaya untuk kebutuhan bisnis, teknologi,
           dan akademik Anda
