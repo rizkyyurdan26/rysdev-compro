@@ -1,5 +1,5 @@
 <template>
-  <section id="primacy" class="flex w-full py-20 bg-bgsecondary">
+  <section id="primacy" class="flex w-full py-20 bg-bgsecondary scrol-mt-24">
     <div
       class="flex flex-col md:flex-row justify-around items-center gap-5 w-[90%] md:max-w-6xl mx-auto"
     >

@@ -1,5 +1,5 @@
 <template>
-  <section id="offers" class="flex w-full bg-bgsecondary">
+  <section id="offers" class="flex w-full bg-bgsecondary scroll-mt-24">
     <div
       class="flex flex-col max-w-[90%] justify-center items-center mx-auto py-20"
     >

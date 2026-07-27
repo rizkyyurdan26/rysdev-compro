@@ -1,6 +1,8 @@
 <template>
   <div
-    class="group flex flex-col items-center border border-title/30 hover:border-title transform duration-500 bg-card-hero p-6 rounded-xl" v-for="item in data" :key="item.id"
+    class="group flex flex-col items-center border border-title/30 hover:border-title transform duration-500 bg-card-hero p-6 rounded-xl"
+    v-for="item in data"
+    :key="item.id"
   >
     <Icon :icon="item.icon" width="48" class="text-white" />
     <h3 class="text-text text-center font-semibold text-base md:text-lg mt-3">
@@ -8,9 +10,11 @@
     </h3>
 
     <ul
-      class="mt-3 ml-15 md:ml-10 self-start list-disc list-outside marker:text-title marker:text-xl text-text/80 text-sm md:text-base" v-for="content in item.content" :key="content.id"
+      class="mt-2 md:mt-0 lg:mt-3 ml-15 md:ml-10 self-start list-disc list-outside marker:text-title marker:text-xl text-text/80 text-sm md:text-base"
+      v-for="content in item.content"
+      :key="content.id"
     >
-      <li >{{ content.name }}</li>
+      <li>{{ content.name }}</li>
     </ul>
 
     <div
@@ -23,7 +27,6 @@
 import { Icon } from "@iconify/vue";
 
 defineProps({
-
   data: {
     type: Object,
     default: () => {},

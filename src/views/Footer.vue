@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="w-full bg-bgsecondary/80 pt-10 md:pt-20">
+  <section id="contact" class="w-full bg-bgsecondary pt-10 md:pt-20 scroll-mt-24">
     <div
       class="flex flex-col items-center justify-center w-[90%] md:max-w-6xl mx-auto"
     >
@@ -26,7 +26,7 @@
     </div>
 
     <div
-      class="mt-10 md:mt-20 border-t border-title/10 py-10 text-center text-sm md:text-base text-white/70 bg-bgsecondary"
+      class="py-10 text-center text-sm md:text-base text-white/70"
     >
       <p>
         <span>&copy 2026</span> RYSDEV DIGITAL SOLUTION. All rights reserved.

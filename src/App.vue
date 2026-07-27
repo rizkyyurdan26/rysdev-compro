@@ -6,6 +6,7 @@
       <Layanan />
       <Workflow />
       <Primacy />
+      <Referensi />
     </main>
     <Footer />
   </div>
@@ -22,6 +23,7 @@ import Workflow from "./views/Workflow.vue";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { useHead } from "@unhead/vue";
+import Referensi from "./views/Referensi.vue";
 
 useHead({
   htmlAttrs: { lang: "id" },

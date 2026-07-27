@@ -1,5 +1,5 @@
 <template>
-  <section id="workflow" class="relative w-full bg-bgsecondary/80 py-20">
+  <section id="workflow" class="relative w-full bg-bgsecondary/80 py-20 scroll-mt-24">
     <div
       class="flex flex-col w-[90%] md:max-w-6xl items-center justify-center mx-auto"
     >

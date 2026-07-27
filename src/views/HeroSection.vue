@@ -1,7 +1,7 @@
 <template>
   <section
     id="home"
-    class="relative min-h-[calc(100dvh-72px)] flex w-full items-center justify-center text-white px-6 overflow-hidden border-b border-title/10 bg-radial from-title/20 via-title/10 to-transparent"
+    class="relative min-h-[calc(100dvh-72px)] flex w-full items-center justify-center text-white px-6 overflow-hidden border-b border-title/10 bg-radial from-title/20 via-title/10 to-transparent scroll-mt-24"
   >
     <!-- Content -->
 

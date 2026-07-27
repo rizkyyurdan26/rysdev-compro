@@ -51,32 +51,28 @@
 
         <!-- Nav menu -->
         <a
-          v-for="nav in navData"
+          v-for="nav in dataNavbar"
           :key="nav.id"
           :class="[
             'text-text hover:text-title transform duration-300',
             activeMenu === nav.id ? 'text-title font-semibold' : '',
           ]"
           :href="'#' + nav.id"
-          @click="
-            setActiveMenu(nav.id);
-            isOpen = false;
-          "
+          @click="setActiveMenu(nav.id)"
           >{{ nav.name }}</a
         >
 
-        <a
-          :class="[
-            'border text-center border-title font-semibold py-2 px-3 rounded-xl hover:scale-110 transform duration-300',
-            activeMenu === 'contact' ? 'bg-title/20 text-text' : 'text-title',
-          ]"
-          href="#contact"
-          @click="
-            setActiveMenu('contact');
-            isOpen = false;
-          "
-          >Contact Us</a
-        >
+        <div class="flex flex-col lg:flex-row items-start gap-3">
+          <MainButton
+            v-for="item in dataButtonNavbar"
+            :key="item.id"
+            :text="item.text"
+            :href="item.href"
+            :transparent="item.transparent"
+            :extention="item.extention"
+            @click="setActiveMenu(item.activeMenu)"
+          />
+        </div>
       </nav>
     </div>
   </header>
@@ -84,24 +80,39 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
-import { ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
+import { dataNavbar, dataButtonNavbar } from "../data/dataNavbar";
+import MainButton from "../components/MainButton.vue";
 
 const activeMenu = ref("home");
 const isOpen = ref(false);
 const isScrolled = ref(false);
 
-const navData = [
-  { id: "home", name: "Home" },
-  { id: "offers", name: "Offers" },
-  { id: "workflow", name: "Workflow" },
-  { id: "primacy", name: "Primacy" },
-];
-
 const setActiveMenu = (menuId) => {
   activeMenu.value = menuId;
+  isOpen.value = false;
 };
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;
+
+  dataNavbar.forEach((nav) => {
+    const element = document.getElementById(nav.id);
+    if (element) {
+      const top = element.offsetTop - 150;
+      const height = element.offsetHeight;
+      if (window.scrollY >= top && window.scrollY < top + height) {
+        activeMenu.value = nav.id;
+      }
+    }
+  });
 };
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
